@@ -3,11 +3,12 @@
     <parent>
         <artifactId>spring-pet-clinic</artifactId>
         <groupId>ozcan.springframework</groupId>
-        <version>0.0.1</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pet-clinic-data</artifactId>
+  <version>0.0.1</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -59,10 +60,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
-
-
-  <scm>
-    <tag>spring-pet-clinic-0.0.1</tag>
-  </scm>
 </project>
