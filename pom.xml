@@ -43,9 +43,9 @@
 	</build>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/ozcanmuhammet/spring-pet-clinic.git</developerConnection>
-   </scm>
-
+		<url>https://github.com/ozcanmuhammet/spring-pet-clinic</url>
+		<connection>scm:git:https://github.com/ozcanmuhammet/spring-pet-clinic.git</connection>
+	</scm>
 
 
 </project>
