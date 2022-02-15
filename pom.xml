@@ -43,7 +43,6 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:https://ozcanmuhammet:mumi691500G@https://github.com/ozcanmuhammet/spring-pet-clinic.git</connection>
 		<developerConnection>scm:git:https://ozcanmuhammet:mumi691500G@https://github.com/ozcanmuhammet/spring-pet-clinic.git</developerConnection>
    </scm>
 
