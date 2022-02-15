@@ -46,7 +46,8 @@
 		<url>https://github.com/ozcanmuhammet/spring-pet-clinic</url>
 		<connection>scm:git:https://github.com/ozcanmuhammet/spring-pet-clinic.git</connection>
 		<developerConnection>scm:git:https://github.com/ozcanmuhammet/spring-pet-clinic.git</developerConnection>
-	</scm>
+	  <tag>spring-pet-clinic-0.0.1</tag>
+  </scm>
 
 
 </project>
