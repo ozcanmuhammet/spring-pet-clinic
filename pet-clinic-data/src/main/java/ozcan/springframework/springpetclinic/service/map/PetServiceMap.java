@@ -2,10 +2,11 @@ package ozcan.springframework.springpetclinic.service.map;
 
 import ozcan.springframework.springpetclinic.model.Pet;
 import ozcan.springframework.springpetclinic.service.CrudService;
+import ozcan.springframework.springpetclinic.service.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
