@@ -1,5 +1,6 @@
 package ozcan.springframework.springpetclinic.service.map;
 
+import org.springframework.stereotype.Service;
 import ozcan.springframework.springpetclinic.model.Vet;
 import ozcan.springframework.springpetclinic.service.CrudService;
 import ozcan.springframework.springpetclinic.service.VetService;
@@ -7,6 +8,7 @@ import ozcan.springframework.springpetclinic.service.VetService;
 import javax.sql.rowset.CachedRowSet;
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
