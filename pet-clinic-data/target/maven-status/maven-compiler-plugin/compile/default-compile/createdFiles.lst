@@ -1,5 +1,14 @@
+ozcan\springframework\springpetclinic\service\OwnerService.class
+ozcan\springframework\springpetclinic\service\VetService.class
 ozcan\springframework\springpetclinic\model\Pet.class
-ozcan\springframework\springpetclinic\model\Vet.class
+ozcan\springframework\springpetclinic\service\map\OwnerServiceMap.class
+ozcan\springframework\springpetclinic\service\map\AbstractMapService.class
 ozcan\springframework\springpetclinic\model\Owner.class
 ozcan\springframework\springpetclinic\model\PetType.class
+ozcan\springframework\springpetclinic\service\PetService.class
+ozcan\springframework\springpetclinic\model\Vet.class
+ozcan\springframework\springpetclinic\service\map\VetServiceMap.class
+ozcan\springframework\springpetclinic\service\CrudService.class
+ozcan\springframework\springpetclinic\model\BaseEntity.class
+ozcan\springframework\springpetclinic\service\map\PetServiceMap.class
 ozcan\springframework\springpetclinic\model\Person.class

@@ -1,1 +1,5 @@
+ozcan\springframework\springpetclinic\controller\OwnerController.class
+ozcan\springframework\springpetclinic\controller\IndexController.class
+ozcan\springframework\springpetclinic\controller\VetController.class
 ozcan\springframework\springpetclinic\SpringPetClinicApplication.class
+ozcan\springframework\springpetclinic\bootstrap\DataLoader.class
