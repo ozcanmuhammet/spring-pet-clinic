@@ -2,7 +2,7 @@ package ozcan.springframework.springpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Visit {
+public class Visit extends BaseEntity{
 
     private LocalDate date;
     private String description;
