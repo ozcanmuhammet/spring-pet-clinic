@@ -1,5 +1,6 @@
 package ozcan.springframework.springpetclinic.service.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import ozcan.springframework.springpetclinic.model.Speciality;
 import ozcan.springframework.springpetclinic.model.Vet;
@@ -9,6 +10,7 @@ import ozcan.springframework.springpetclinic.service.VetService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
