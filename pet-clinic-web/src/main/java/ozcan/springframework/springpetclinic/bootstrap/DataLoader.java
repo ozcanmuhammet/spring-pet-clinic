@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import ozcan.springframework.springpetclinic.model.*;
-import ozcan.springframework.springpetclinic.service.OwnerService;
-import ozcan.springframework.springpetclinic.service.PetTypeService;
-import ozcan.springframework.springpetclinic.service.SpecialityService;
-import ozcan.springframework.springpetclinic.service.VetService;
+import ozcan.springframework.springpetclinic.service.*;
 
 import java.time.LocalDate;
 
@@ -18,13 +15,16 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
     @Autowired  // This is not necessary, it's optional
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
+                      SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -92,6 +92,13 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(samsPet);
 
         ownerService.save(owner2);
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(samsPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
 
         System.out.println("Loaded owners....");
 
